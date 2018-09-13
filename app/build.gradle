@@ -1,5 +1,9 @@
 apply plugin: 'com.android.library'
 apply from: 'maven-release-aar.gradle'
+
+//添加complie生成依赖
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.jp5201314'//最后一个是github账号
 android {
     compileSdkVersion 26
     defaultConfig {
