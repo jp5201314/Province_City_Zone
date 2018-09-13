@@ -2,9 +2,11 @@
 apply plugin: 'maven'
 // 2.maven-信息
 ext {// ext is a gradle closure allowing the declaration of global properties
-    PUBLISH_GROUP_ID = 'com.github'
-    PUBLISH_ARTIFACT_ID = 'base'
+    PUBLISH_GROUP_ID = 'com.jp5201314'
+    PUBLISH_ARTIFACT_ID = 'libary'
     PUBLISH_VERSION = android.defaultConfig.versionName
+    // 从Github上clone下来的项目的本地地址
+    GITHUB_REPO_PATH = "F\\:\\\\Android Projects\\\\Province_City_Zone"
 }
 // 3.maven-路径
 uploadArchives {
