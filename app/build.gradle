@@ -1,14 +1,12 @@
-apply plugin: 'com.android.application'
-apply plugin: 'com.github.dcendents.android-maven'
-group='com.github.jp5201314'//最后一个是github账号
+apply plugin: 'com.android.library'
+apply from: 'maven-release-aar.gradle'
 android {
     compileSdkVersion 26
     defaultConfig {
-        applicationId "cn.cnlinfo.ccf.province_city_zone"
         minSdkVersion 17
         targetSdkVersion 26
-        versionCode 2
-        versionName "1.0"
+        versionCode 3
+        versionName "1.0.3"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
